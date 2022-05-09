@@ -1,0 +1,797 @@
+    body {
+        margin: 0;
+        overflow: hidden;
+        height: 100vh;
+        position: fixed;
+        width: 100vw;
+    }
+    
+     :root {
+        font-size: calc(16px + (24 - 16)*(100vw - 320px)/ (1280 - 320));
+    }
+    
+    .bar {
+        position: absolute;
+        top: -2.5%;
+        left: 5%;
+        width: 90vw;
+        height: 15vh;
+        backdrop-filter: blur(2px);
+        /* animation: 1s ease-out 0.5s 1 slideInLeft;
+        animation-delay: 3s */
+    }
+    /* Animations */
+    
+    @keyframes tiltSpin {
+        from {
+            transform: rotateY(0) rotateX(30deg);
+        }
+        to {
+            transform: rotateY(1turn) rotateX(30deg);
+        }
+    }
+    
+    @keyframes spin {
+        from {
+            transform: rotateY(0);
+        }
+        to {
+            transform: rotateY(1turn);
+        }
+    }
+    /* #preloader {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        overflow: visible;
+        background: url('../images/preloader.gif') no-repeat center center;
+        background-size: cover;
+    } */
+    /* #content {
+        display: none;
+    } */
+    
+    .planet {
+        opacity: 0.8;
+        width: 10%;
+        position: absolute;
+        top: 26%;
+        left: 4%;
+    }
+    
+    .text-manthan {
+        position: relative;
+        margin-bottom: -22%;
+        z-index: 999;
+        letter-spacing: 4px;
+        transform: skewY(349deg);
+        text-shadow: 2px 4px 8px #c51dd2;
+        text-decoration: underline;
+        color: #ffffff50;
+        font-family: cursive;
+    }
+    
+    .ship-holder {
+        width: 20%;
+        position: absolute;
+        top: 24%;
+        transform: rotate(350deg);
+        right: 2%;
+    }
+    
+    .spaceship {
+        width: 100%;
+        filter: brightness(0.60)
+    }
+    
+    .manthanlogo {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 30%;
+    }
+    
+    .socials {
+        width: 20vw;
+        position: absolute;
+        left: 8%;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .socials-2 {
+        width: 20vw;
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .social-icons {
+        position: relative;
+        width: 30%;
+        margin-right: 52px;
+        animation: blinkng 4s infinite ease-in-out alternate;
+        animation-delay: 2.2s;
+        transition: ease-in-out 0.5s;
+    }
+    
+    .social-icons:hover {
+        filter: brightness(0.99);
+        width: 45%;
+        margin-bottom: 13px;
+    }
+    
+    img.bottom-bar {
+        transform: rotate(180deg);
+        position: absolute;
+        right: -20%;
+        bottom: 0;
+        width: 60%;
+        backdrop-filter: blur(2px);
+        background: linear-gradient(45deg, #000000a8, transparent);
+    }
+    
+    img.bottom-bar-left {
+        transform: rotate(180deg);
+        position: absolute;
+        left: -20%;
+        bottom: 0;
+        width: 60%;
+        backdrop-filter: blur(2px);
+    }
+    
+    .header {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        background: linear-gradient(45deg, #00000098, transparent);
+        position: fixed;
+        width: 100vw;
+    }
+    
+    .ironman {
+        -webkit-animation: up-down 2.5s infinite ease-in-out alternate;
+        max-width: 600px;
+        animation-delay: 2s;
+    }
+    
+    .float {
+        -webkit-animation: up-down 2.5s infinite ease-in-out alternate;
+        animation: up-down 2.5s infinite ease-in-out alternate;
+        animation-delay: 2s;
+    }
+    
+    .float-planet {
+        -webkit-animation: up-down 1.5s infinite ease-in-out alternate;
+        animation: up-down 4s infinite ease-in-out alternate;
+        animation-delay: 0.5s;
+    }
+    
+    .snap {
+        width: 22%;
+        position: absolute;
+        bottom: -8%;
+        left: 37%
+    }
+    
+    .hammer-container {
+        position: absolute;
+        width: 15%;
+        right: 0;
+        transform: rotate(45deg);
+    }
+    
+    .hammer {
+        width: 100%;
+        filter: brightness(0.75);
+    }
+    
+    .image {
+        margin-top: 2rem;
+        width: 100%;
+        max-width: 500px;
+        border: none;
+        border-radius: 15px;
+        -webkit-animation: up-down 1.4s infinite ease-in-out alternate;
+    }
+    
+    @keyframes up-down {
+        from {
+            transform: translatey(0px);
+        }
+        to {
+            transform: translatey(-20px);
+        }
+    }
+    
+    @keyframes blinkng1 {
+        50% {
+            opacity: 0.5;
+        }
+        80% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.5;
+        }
+    }
+    
+    @keyframes blinkng {
+        25% {
+            filter: brightness(0.8);
+        }
+        100% {
+            filter: brightness(1);
+        }
+    }
+    
+    @keyframes pop {
+        0% {
+            transform: scale(0.96);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes clouds {
+        from {
+            transform: translatey(0px);
+        }
+        to {
+            transform: translatey(-30px);
+        }
+    }
+    
+    @keyframes slideInLeft {
+        0% {
+            transform: translateY(-200%);
+        }
+        50% {
+            transform: translateY(100);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+    .box {
+        top: 40%;
+        position: absolute;
+        width: 300px;
+        left: 6%;
+        height: 150px;
+        background: #ffffff21;
+        padding: 12px;
+        box-shadow: 15px 15px 30px #160227a3;
+        backdrop-filter: blur(1px);
+        margin: 0 auto;
+        justify-content: center;
+        border-radius: 20px;
+        align-items: center;
+        -webkit-animation: pop 2.5s infinite ease-in-out alternate;
+        animation: pop 2.5s infinite ease-in-out alternate;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .box2 {
+        top: 40%;
+        position: absolute;
+        width: 300px;
+        right: 6%;
+        height: 150px;
+        background: #ffffff21;
+        padding: 12px;
+        box-shadow: 15px 15px 30px #160227a3;
+        backdrop-filter: blur(1px);
+        margin: 0 auto;
+        justify-content: center;
+        border-radius: 20px;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        -webkit-animation: pop 2.5s infinite ease-in-out alternate;
+        animation: pop 2.5s infinite ease-in-out alternate;
+    }
+    
+    .box:hover,
+    .box2:hover {
+        backdrop-filter: blur(8px);
+        top: 38%;
+    }
+    
+    .top,
+    .bottom,
+    .left,
+    .right {
+        position: absolute;
+        -webkit-animation: 8s linear infinite;
+        animation: 8s linear infinite;
+    }
+    
+    .top {
+        top: -3px;
+        left: -3px;
+        height: 4px;
+        filter: blur(10px);
+        opacity: 1;
+        border-radius: 12px;
+        margin: 0 5px 0 5px;
+        -webkit-animation-name: top;
+        animation-name: top;
+    }
+    
+    @-webkit-keyframes top {
+        25% {
+            width: 0;
+            background: #3e0a7a;
+        }
+        38% {
+            width: calc(103%);
+            background: #3e0a7a;
+        }
+        50% {
+            background: #3e0a7a;
+        }
+        62% {
+            background: #3e0a7a;
+        }
+        75% {
+            width: calc(103%);
+            background: #3e0a7a;
+        }
+        88% {
+            left: auto;
+            right: -3px;
+            width: 0;
+            background: #3e0a7a;
+        }
+    }
+    
+    .bottom {
+        bottom: -3px;
+        right: -3px;
+        height: 4px;
+        filter: blur(10px);
+        opacity: 1;
+        border-radius: 12px;
+        margin: 0 5px 0 5px;
+        -webkit-animation-name: bottom;
+        animation-name: bottom;
+    }
+    
+    @-webkit-keyframes bottom {
+        0% {
+            width: 0;
+        }
+        12% {
+            width: calc(103%);
+            background: #3e0a7a;
+        }
+        25% {
+            background: #3e0a7a;
+        }
+        38% {
+            background: #3e0a7a;
+        }
+        50% {
+            width: calc(103%);
+            background: #3e0a7a;
+        }
+        62% {
+            left: -3px;
+            width: 0;
+            background: #3e0a7a;
+        }
+        75% {
+            background: #3e0a7a;
+        }
+    }
+    
+    .left {
+        bottom: -3px;
+        left: -3px;
+        width: 3px;
+        filter: blur(10px);
+        opacity: 1;
+        border-radius: 12px;
+        margin: 0 5px 0 5px;
+        -webkit-animation-name: left;
+        animation-name: left;
+    }
+    
+    @-webkit-keyframes left {
+        12% {
+            height: 0;
+            background: #3e0a7a;
+        }
+        25% {
+            height: calc(103%);
+            background: #3e0a7a;
+        }
+        38% {
+            background: #3e0a7a;
+        }
+        50% {
+            background: #3e0a7a;
+        }
+        62% {
+            height: calc(103%);
+            background: #3e0a7a;
+        }
+        75% {
+            top: -3px;
+            height: 0;
+            background: #3e0a7a;
+        }
+        88% {
+            background: #3e0a7a;
+        }
+    }
+    
+    .right {
+        top: -3px;
+        right: -3px;
+        width: 3px;
+        filter: blur(10px);
+        opacity: 1;
+        border-radius: 12px;
+        margin: 0 5px 0 5px;
+        -webkit-animation-name: right;
+        animation-name: right;
+    }
+    
+    @-webkit-keyframes right {
+        38% {
+            height: 0;
+            background: #3e0a7a;
+        }
+        50% {
+            height: calc(103%);
+            background: #3e0a7a;
+        }
+        62% {
+            background: #3e0a7a;
+        }
+        75% {
+            background: #3e0a7a;
+        }
+        88% {
+            height: calc(103%);
+            background: #3e0a7a;
+        }
+        100% {
+            top: auto;
+            bottom: -3px;
+            height: 0;
+            background: #3e0a7a;
+        }
+    }
+    
+    .top-left-logo {
+        width: 16% !important;
+        height: auto;
+        z-index: 999;
+        margin: 3% 0 0 -35%;
+    }
+    
+    .top-right-logo {
+        width: 17% !important;
+        height: auto;
+        z-index: 999;
+        margin-top: 3%;
+    }
+    
+    .surutsav {
+        z-index: 999;
+        display: flex;
+        width: 90vw;
+        height: 15vh;
+        margin: auto;
+        justify-content: space-evenly;
+        background: linear-gradient(45deg, #00000047, transparent), url(../images/bar.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+        backdrop-filter: blur(2px);
+    }
+    
+    img.surutsav-logo {
+        width: 70%;
+        margin-top: 0%;
+    }
+    
+    .surutsav .img-con {
+        width: 33.33%;
+        max-width: 33.33%;
+        z-index: 999;
+    }
+    
+    video {
+        min-width: 100%;
+        min-height: 100vh;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .mobile-date {
+        display: none;
+    }
+    
+    .date-container:hover {
+        right: -72%;
+        animation: none;
+    }
+    
+    .date-container {
+        position: absolute;
+        top: 18%;
+        width: 90%;
+        right: -84.5%;
+        z-index: 999;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        animation: datemove 5s infinite ease-in-out alternate;
+        /* transform: rotate(-90deg); */
+        /* animation: datemove 3s infinite ease-in-out alternate;
+
+        position: absolute;
+    top: -60%;
+    width: 100%;
+    right: -49%;
+    z-index: -1;
+    filter: brightness(0.85);
+    transform: rotate(-90deg);
+    animation: datemove 5s infinite ease-in-out alternate; */
+    }
+    
+    @keyframes datemove {
+        0% {
+            margin-right: 1rem;
+        }
+        25% {
+            margin-right: 0rem;
+        }
+        50% {
+            margin-right: 8rem;
+        }
+        75% {
+            margin-right: 2rem;
+        }
+        100% {
+            margin-right: 1rem;
+        }
+    }
+    
+    .date {
+        width: 20%;
+    }
+    /* responsive css */
+    
+    @media screen and (min-device-width: 665px) and (max-device-width: 840px) {
+        /* STYLES HERE */
+        .box,
+        .box2 {
+            width: 30% !important;
+            height: 20vh !important;
+        }
+        .manthanlogo {
+            width: 95% !important
+        }
+    }
+    
+    @media screen and (min-device-width: 501px) and (max-device-width: 664px) {
+        /* STYLES HERE */
+        .box,
+        .box2 {
+            width: 30% !important;
+            height: 20vh !important;
+        }
+        .manthanlogo {
+            width: 90% !important
+        }
+    }
+    
+    @media screen and (min-device-width: 480px) and (max-device-width: 640px) {
+        /* STYLES HERE */
+        .box,
+        .box2 {
+            position: unset !important;
+            width: 55% !important;
+            height: 13vh !important;
+            padding: 0 0 5% 0 !important;
+            margin: 2rem auto !important;
+        }
+        .manthanlogo {
+            width: 58% !important
+        }
+        .snap {
+            width: 32% !important;
+            left: 32% !important;
+        }
+    }
+    
+    @media screen and (min-device-width: 200px) and (max-device-width: 479px) {
+        /* STYLES HERE */
+        .box,
+        .box2 {
+            position: unset !important;
+            width: 80% !important;
+            height: 18vh !important;
+            padding: 0 0 5% 0 !important;
+            margin: 2rem auto !important;
+        }
+        .manthanlogo {
+            width: 80% !important
+        }
+        .snap {
+            left: 15% !important;
+            width: 70% !important;
+        }
+        img.surutsav-logo {
+            width: 140px;
+            margin: 13% 0 0 -10%;
+        }
+        .bar {
+            left: 0 !important;
+            width: 800px !important;
+        }
+        .surutsav {
+            background-image: none;
+        }
+        .top-left-logo {
+            width: 50% !important;
+            height: auto;
+            z-index: 999;
+            margin: 9% 0 0 -63% !important;
+        }
+        .top-right-logo {
+            width: 50% !important;
+            height: auto;
+            z-index: 999;
+            margin: 8% -52% 0 0 !important;
+        }
+        .social-icons {
+            position: relative;
+            width: 60%;
+            margin-right: 8px;
+            animation: blinkng 4s infinite ease-in-out alternate;
+            animation-delay: 2.2s;
+        }
+        .date {
+            width: 47% !important;
+        }
+        .date-container {
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            right: -47%;
+            z-index: 999;
+            transform: rotate(-90deg);
+        }
+    }
+    
+    @media screen and (min-device-width: 200px) and (max-device-width: 354px) {
+        .snap {
+            left: 14% !important;
+            width: 80% !important;
+        }
+    }
+    /* @media only screen and (max-width: 810px) {
+        .box,
+        .box2 {
+            position: unset !important;
+            width: 50% !important;
+            height: 20vh !important;
+            padding: 0 0 5% 0 !important;
+            margin: 2rem auto !important;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .box,
+        .box2 {
+            position: unset !important;
+            width: 50% !important;
+            height: 20vh !important;
+            padding: 0 0 5% 0 !important;
+            margin: 2rem auto !important;
+        }
+        .snap {
+            width: 50%;
+            position: absolute;
+            bottom: -6%;
+            left: 25%;
+        }
+        .bar {
+            position: absolute;
+            top: -4%;
+            width: 100vw;
+            left: 5%;
+            backdrop-filter: blur(2px);
+        }
+        .top-left-logo {
+            width: 30% !important;
+            height: auto;
+            z-index: 999;
+            margin: 10% 70% 0 0;
+        }
+        .mobile-date {
+            display: block !important;
+            width: 50%;
+            position: absolute;
+            left: 25%;
+            top: 6%;
+        }
+        .pc-date {
+            display: none !important;
+        }
+    }
+    
+    @media only screen and (max-width: 456px) {
+        .box {
+            position: unset !important;
+            width: 50% !important;
+            height: 15vh !important;
+            padding: 0 0 5% 0 !important;
+            margin: 2rem auto !important;
+        }
+        .box2 {
+            position: unset !important;
+            width: 50% !important;
+            height: 15vh !important;
+            padding: 0 0 5% 0 !important;
+            margin: 2rem auto !important;
+        }
+        .snap {
+            width: 40%;
+            position: absolute;
+            bottom: -7%;
+            left: 25%;
+        }
+        img.surutsav-logo {
+            width: 90%;
+            margin-top: 0.8%;
+        }
+    }
+    
+    @media only screen and (max-width: 256px) {
+        .box {
+            position: unset !important;
+            width: 50% !important;
+            height: 10vh !important;
+            padding: 0 0 0% 0 !important;
+            margin: 2rem auto !important;
+        }
+        .box2 {
+            position: unset !important;
+            width: 50% !important;
+            height: 10vh !important;
+            padding: 0 0 0 0 !important;
+            margin: 2rem auto !important;
+        }
+        .snap {
+            width: 70%;
+            position: absolute;
+            bottom: -4%;
+            left: 15%;
+        }
+    } */

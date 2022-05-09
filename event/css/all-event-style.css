@@ -1,0 +1,341 @@
+body {
+    background-color: rgb(23, 22, 22);
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.c-row {
+    margin: 0% auto 8% auto;
+    text-align: center;
+    box-shadow: 0 2px 0px #b2ccf9;
+    padding-bottom: 80px;
+}
+
+.event-heading {
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-heading img {
+    width: 30%;
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+}
+
+.event {
+    width: 33.33%;
+    color: aliceblue;
+}
+
+.align-middle {
+    text-align: center;
+    /* background-image: url(../images/bg.png); */
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.container {
+    backdrop-filter: blur(1.5px)
+}
+
+.heart {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 40%;
+    margin-top: 70%;
+    filter: brightness(0.7);
+    margin-left: 5%;
+    animation: heart 3s infinite ease-in-out;
+    position: absolute;
+    left: 25%;
+    opacity: 0.8;
+}
+
+@keyframes heart {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+h2.event-heading {
+    color: #fff;
+    margin-bottom: 5%;
+}
+
+.circle {
+    height: 90%;
+    width: 80%;
+    margin: 6% auto;
+    background-color: rgb(255 255 255 / 11%);
+    border-radius: 18px;
+    padding: 12px 8px;
+    box-shadow: inset 0px 1px 1px #07a5f9, inset 0 -1px 1px #07a5f9, 6px 0px 0px #1edbfff0, -6px 0 0 #1edbfff0;
+    transition: ease-in-out 0.2s;
+    text-align: center;
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.circle:hover {
+    box-shadow: inset 0px 2px 3px #07a5f9, inset 0 -2px 3px #07a5f9, 6px 0px 0px #1edbfff0, -6px 0 0 #1edbfff0, 0 0 8px #07ff9f;
+    background: linear-gradient(177deg, #6180a3, transparent);
+    width: 70%;
+}
+
+.align-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 27%;
+}
+
+.align-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    right: 10%;
+}
+
+
+/* div.circle.c1,
+.b1 {
+    margin-left: 17%;
+} */
+
+div.circle.c2,
+.b2 {
+    margin-left: -16%;
+}
+
+div.circle.c3,
+.b3 {
+    margin-left: -25%;
+    margin-top: 0%;
+}
+
+div.circle.c4,
+.b4 {
+    margin-left: -12%;
+    margin-top: 5%;
+}
+
+div.circle.c5,
+.b5 {
+    margin-left: 22%;
+}
+
+div.circle.cl1,
+.b6 {
+    margin-left: -15%;
+}
+
+div.circle.cl2,
+.b7 {
+    margin-left: 21%;
+}
+
+div.circle.cl3,
+.b8 {
+    margin-left: 28%;
+    margin-top: 0%;
+}
+
+div.circle.cl4,
+.b9 {
+    margin-left: 14%;
+    margin-top: 2%;
+}
+
+div.circle.cl5,
+.b10 {
+    margin-left: -15%;
+}
+
+.circle img {
+    height: 100%;
+    width: 100%;
+}
+
+.circle i {
+    font-size: 3rem;
+    color: #ace0ff;
+    margin: 10px auto;
+    text-shadow: 1px 4px 0px #1d0e43, 0 0 10px #000000e0;
+}
+
+path {
+    fill: transparent;
+}
+
+text {
+    fill: #ffffff;
+}
+
+svg {
+    margin: 5% 0 0 -30%;
+    transform: rotate(19deg);
+    font-size: 3.5rem;
+}
+
+.btn-card {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    background: transparent;
+    /* background: linear-gradient(45deg, transparent 5%, #fefdfd24 5%); */
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    /* box-shadow: 6px 0px 0px #00e6f6, 0 0 7px #00000070; */
+    outline: transparent;
+    /* backdrop-filter: blur(1px); */
+    position: relative;
+}
+
+.c1:hover .fa-robot {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.c2:hover .fa-microchip {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.c3:hover .fa-gamepad {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.c4:hover .fa-face-smile-wink {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.c5:hover .fa-brain {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.cl1:hover .fa-monster {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.cl2:hover .fa-camera {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.cl3:hover .fa-gem {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.cl4:hover .fa-code {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.cl5:hover .fa-cube {
+    color: #fff;
+    font-size: 2.9rem;
+}
+
+.button {
+    position: absolute;
+    bottom: 3%;
+    left: 47%;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 8px 20px;
+    box-shadow: inset 3px 3px 6px #83c6fa, inset -4px -4px 6px #1edbff, 6px 6px 6px #067477;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(135deg, transparent 5%, #a8949424 5%);
+    border-radius: 8px;
+}
+
+.button-back {
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    color: #1edbff;
+    font-size: 1rem;
+    border: none;
+    padding: 2px 12px;
+    box-shadow: inset 3px 3px 6px #83c6fa, inset -4px -4px 6px #1edbff, 6px 6px 6px #067477;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(135deg, transparent 5%, #a8949424 5%);
+    border-radius: 8px;
+}
+
+.home-back {
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    color: #1edbff;
+    font-size: 1rem;
+    border: none;
+    padding: 2px 12px;
+    box-shadow: inset 3px 3px 6px #83c6fa, inset -4px -4px 6px #1edbff, 6px 6px 6px #067477;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(135deg, transparent 5%, #a8949424 5%);
+    border-radius: 8px;
+}

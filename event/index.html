@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/surutsav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4a4cf3ae7.js" crossorigin="anonymous"></script>
+    <title>Manthan Events</title>
+</head>
+
+<body>
+    <section>
+        <!-- origial -->
+        <a href="../index.html"><button type="button" class="button-back"><i class="fa-solid fa-arrow-left"></i></button></a>
+        <a href="../index.html"><button type="button" class="home-back"><i class="fa-solid fa-home"></i></button></a>
+
+        <div class="wrapper">
+            <div class="event align-right">
+
+                <button class="btn b1">ROBO SAFARI</button>
+                <div class="circle c1">
+                    <i class="fa-solid fa-robot">
+                    </i>
+                </div>
+
+                <button class="btn b2">TECHNOVATION</button>
+                <div class="circle c2">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+
+                <button class="btn b3">GAMEARENA</button>
+                <div class="circle c3">
+                    <i class="fa-solid fa-gamepad">
+                    </i>
+                </div>
+
+                <button class="btn b4">FUN GAMES</button>
+                <div class="circle c4">
+                    <i class="fa-solid fa-face-smile-wink">
+                    </i>
+                </div>
+
+                <button class="btn b5">QUIZ</button>
+                <div class="circle c5">
+                    <i class="fa-solid fa-brain">
+                    </i>
+                </div>
+
+            </div>
+            <div class="event align-middle">
+                <img src="images/heart.png" class="heart">
+                <a href="allevents.html" class="button">All Events</a>
+            </div>
+            <div class="event align-left">
+                <button class="btn2 b6">DISMANTLING</button>
+                <div class="circle cl1">
+                    <i class="fa-solid fa-truck-monster"></i>
+                </div>
+
+                <button class="btn2 b7">PHOTOGRAPHY</button>
+                <div class="circle cl2">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+
+                <button class="btn2 b8">TREASURE HUNT</button>
+                <div class="circle cl3">
+                    <i class="fa-solid fa-gem"></i>
+                </div>
+
+                <button class="btn2 b9">CODING/HACKATHON</button>
+                <div class="circle cl4">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <button class="btn2 b10">AUTO CAD</button>
+                <div class="circle cl5">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+        //left
+        TweenMax.from(".c5", 3, {
+            duration: 0.3,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".c4", 3, {
+            delay: 0.5,
+            duration: 0.3,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".c3", 3, {
+            delay: 1,
+            duration: 0.3,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".c2", 3, {
+            delay: 1.5,
+            duration: 0.3,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".c1", 3, {
+            duration: 0.3,
+            delay: 2,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+
+        // right
+        TweenMax.from(".cl5", 3, {
+            duration: 0.3,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".cl4", 3, {
+            delay: 0.5,
+            duration: 0.3,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".cl3", 3, {
+            delay: 1,
+            duration: 0.3,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".cl2", 3, {
+            delay: 1.5,
+            duration: 0.3,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".cl1", 3, {
+            duration: 0.3,
+            delay: 2,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+
+        //left-name
+        TweenMax.from(".b5", 3, {
+            duration: 0.3,
+            opacity: 0,
+            x: '50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".b4", 3, {
+            delay: 0.5,
+            duration: 0.3,
+            opacity: 0,
+            x: '50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".b3", 3, {
+            delay: 1,
+            duration: 0.3,
+            opacity: 0,
+            x: '50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".b2", 3, {
+            delay: 1.5,
+            duration: 0.3,
+            opacity: 0,
+            x: '50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".b1", 3, {
+            duration: 0.3,
+            opacity: 0,
+            x: '50%',
+            delay: 2,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        //right-names
+        TweenMax.from(".b10", 3, {
+            duration: 0.3,
+            opacity: 0,
+            x: '-50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".b9", 3, {
+            delay: 0.5,
+            duration: 0.3,
+            opacity: 0,
+            x: '-50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".b8", 3, {
+            delay: 1,
+            duration: 0.3,
+            opacity: 0,
+            x: '-50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".b7", 3, {
+            delay: 1.5,
+            duration: 0.3,
+            opacity: 0,
+            x: '-50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".b6", 3, {
+            duration: 0.3,
+            opacity: 0,
+            x: '-50%',
+            delay: 2,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".heart", 3, {
+            delay: 3,
+            duration: 0.3,
+            opacity: 0,
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".button-back", 3, {
+            delay: 3,
+            duration: 0.3,
+            opacity: 0,
+            y: '-50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.from(".home-back", 3, {
+            delay: 3,
+            duration: 0.3,
+            opacity: 0,
+            y: '-50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+        TweenMax.from(".button", 3, {
+            delay: 3,
+            duration: 0.3,
+            y: '50%',
+            scale: 0,
+            ease: Expo.easeInOut
+        });
+    </script>
+</body>
+
+</html>
