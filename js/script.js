@@ -1,36 +1,101 @@
-gsap.fromTo('.ironman', { opacity: 0, scale: 0, y: '-100%' }, { duration: 3, scale: 1, delay: 0.5, opacity: 1, y: 40, ease: 'back' })
+TweenMax.from(".ironman", 1, {
+    duration: 3,
+    opacity: 0,
+    y: 0,
+    x: '-100%',
+    scale: 0,
+    ease: Expo.easeInOut
+});
 
-const floatAnimation = () => {
-    const tlCan = new TimelineMax({ repeat: -1 });
-    /*Can Animation*/
-    tlCan
-    //move top left
-        .to('.ironman > img', 3, { y: '-=30', x: '+=20', rotation: '-=5', ease: Power1.easeInOut })
+TweenMax.from(".snap", 2, {
+    duration: 2,
+    opacity: 0,
+    y: '+500',
+    scale: 0.5,
+    ease: Expo.easeInOut
+});
+TweenMax.from(".date-container", 2, {
+    delay: 4,
+    duration: 2,
+    x: '+500',
+    ease: Expo.easeInOut
+});
 
-    //move down right
-    .to('.ironman > img', 2, { y: '+=30', x: '-=20', rotation: '-=5', ease: Power1.easeInOut })
+TweenMax.from(".events", 3, {
+    delay: 1,
+    duration: 0.5,
+    opacity: 0,
+    scale: 0,
+    ease: Expo.easeInOut
+});
 
+TweenMax.from(".t-bar", 3, {
+    delay: 0.8,
+    duration: 0.8,
+    y: '-100%',
+    ease: Expo.easeInOut
+});
 
-    .to('.ironman > img', 3, { y: '-=20', rotation: '+=5', ease: Power1.easeInOut })
+TweenMax.from(".b-bar", 3, {
+    delay: 0.8,
+    duration: 0.8,
+    y: '+100%',
+    ease: Expo.easeInOut
+});
 
-    .to('.ironman > img', 3, { y: '+=20', rotation: '+=5', ease: Power1.easeInOut })
+TweenMax.from(".surutsav-logo", 3, {
+    delay: 0.8,
+    duration: 0.8,
+    opacity: 0,
+    scale: 0,
+    ease: Expo.easeInOut
+});
+TweenMax.from(".box", 3, {
+    delay: 1.5,
+    duration: 0.8,
+    opacity: 0,
+    scale: 0,
+    ease: Expo.easeInOut
+});
+TweenMax.from(".box2", 3, {
+    delay: 2,
+    duration: 0.8,
+    opacity: 0,
+    scale: 0,
+    ease: Expo.easeInOut
+});
+TweenMax.from(".top-left-logo", 3, {
+    delay: 1.8,
+    duration: 0.8,
+    opacity: 0,
+    scale: 0,
+    ease: Expo.easeInOut
+});
+TweenMax.from(".top-right-logo", 3, {
+    delay: 1.8,
+    duration: 0.8,
+    opacity: 0,
+    scale: 0,
+    ease: Expo.easeInOut
+});
+TweenMax.from(".social-icons", 3, {
+    delay: 2,
+    duration: 0.5,
+    opacity: 0,
+    scale: 0,
+    ease: Expo.easeInOut
+});
 
+TweenMax.from(".planet", 3, {
+    delay: 1,
+    duration: 0.8,
+    opacity: 0,
+    ease: Expo.easeInOut
+});
 
-    .to('.ironman > imgn', 3, { y: '-=50', ease: Power1.easeInOut })
-
-    .to('.ironman > img', 3, { y: '+=50', ease: Power1.easeInOut })
-
-
-    .to('.ironman > img', 3, { y: '-=30', ease: Power1.easeInOut })
-
-    .to('.ironman > img', 3, { y: '+=30', ease: Power1.easeInOut })
-
-
-    .to('.ironman > img', 2, { y: '-=30', ease: Power1.easeInOut })
-
-    .to('.ironman > img', 2, { y: '+=30', ease: Power1.easeInOut })
-
-    TweenLite.to(tlCan, 27, { ease: Power1.easeInOut })
-
-}
-floatAnimation();
+TweenMax.from(".spaceship", 3, {
+    delay: 1.2,
+    duration: 0.8,
+    opacity: 0,
+    ease: Expo.easeInOut
+});
