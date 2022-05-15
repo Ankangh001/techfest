@@ -1065,9 +1065,13 @@ section#avatar {
         font-size: 1.85rem;
     }
     .footer {
-        height: 80vh !important;
+        height: 100% !important;
+        text-align: center;
     }
     iframe {
         width: 100%
+    }
+    .font-size-4 {
+        font-size: 1.4rem!important;
     }
 }
