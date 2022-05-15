@@ -1005,6 +1005,9 @@ section#avatar {
     .hero-style {
         height: 100vh;
     }
+    .tm {
+        text-align: right;
+    }
     .theme-btn,
     .theme-btn-s2 {
         padding: 10px 17px;
@@ -1051,7 +1054,7 @@ section#avatar {
         margin: 0 auto -8% auto;
     }
     .container {
-        transform: translateY(0)
+        transform: translateY(-10%)
     }
     .hero-style .slide-title,
     .hero-style .slide-text,
