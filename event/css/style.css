@@ -413,3 +413,117 @@ svg {
     background: linear-gradient(135deg, transparent 5%, #a8949424 5%);
     border-radius: 8px;
 }
+
+@media screen and (min-device-width: 200px) and (max-device-width: 479px) {
+    body {
+        background-position: right !important;
+    }
+    .align-left {
+        position: absolute;
+        left: unset;
+        right: 0;
+        top: 10%;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70vh;
+        backdrop-filter: blur(5px);
+        width: 50%;
+    }
+    .align-middle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .align-right {
+        backdrop-filter: blur(5px);
+        width: 50%;
+        position: absolute;
+        right: unset;
+        left: 0%;
+        top: 10%;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 70vh;
+    }
+    div.circle.c1,
+    .b1 {
+        margin-left: 0%;
+    }
+    div.circle.c2,
+    .b2 {
+        margin-left: 0%;
+    }
+    div.circle.c3,
+    .b3 {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    div.circle.c4,
+    .b4 {
+        margin-left: 02%;
+        margin-top: 0%;
+    }
+    div.circle.c5,
+    .b5 {
+        margin-left: 0%;
+    }
+    div.circle.cl1,
+    .b6 {
+        margin-left: 0%;
+    }
+    div.circle.cl2,
+    .b7 {
+        margin-left: 0%;
+    }
+    div.circle.cl3,
+    .b8 {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    div.circle.cl4,
+    .b9 {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    div.circle.cl5,
+    .b10 {
+        margin-left: 0%;
+    }
+    .circle i {
+        font-size: 3rem
+    }
+    .btn {
+        right: 0%;
+        top: 20%;
+        margin-bottom: 8%;
+    }
+    .btn2 {
+        left: 0%;
+        top: 20%;
+        margin-bottom: 8%;
+    }
+    .heart {
+        width: 80%;
+        position: absolute;
+        filter: brightness(0.7);
+        top: 20%;
+        right: 8%;
+    }
+    .btn,
+    .btn2 {
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursive;
+        background: #ededed;
+        border: 0;
+        color: #041f44;
+    }
+    .circle {
+        box-shadow: none;
+        background: transparent
+    }
+    .button {
+        left: 35%
+    }
+}
