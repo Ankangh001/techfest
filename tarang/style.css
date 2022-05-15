@@ -1061,4 +1061,10 @@ section#avatar {
     .timer-head {
         font-size: 1.85rem;
     }
+    .footer {
+        height: 80vh !important;
+    }
+    iframe {
+        width: 100%
+    }
 }
