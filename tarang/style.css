@@ -1058,4 +1058,7 @@ section#avatar {
     .hero-style .slide-btns {
         max-width: 100%
     }
+    .timer-head {
+        font-size: 1.85rem;
+    }
 }
