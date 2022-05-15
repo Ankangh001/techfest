@@ -399,6 +399,10 @@ svg {
     top: 2.5%;
 }
 
+.mob {
+    display: none
+}
+
 .home-back {
     transition: 0.3s ease-in-out;
     position: absolute;
@@ -417,6 +421,13 @@ svg {
 @media screen and (min-device-width: 200px) and (max-device-width: 479px) {
     body {
         background-position: right !important;
+    }
+    .pc {
+        display: none;
+    }
+    .mob {
+        display: block !important;
+        z-index: 999
     }
     .align-left {
         position: absolute;
@@ -497,12 +508,12 @@ svg {
     .btn {
         right: 0%;
         top: 20%;
-        margin-bottom: 8%;
+        margin-bottom: 0%;
     }
     .btn2 {
         left: 0%;
         top: 20%;
-        margin-bottom: 8%;
+        margin-bottom: 0%;
     }
     .heart {
         width: 80%;
