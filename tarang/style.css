@@ -963,9 +963,23 @@ section#avatar {
     color: #ffffff !important;
 }
 
+.sur-logo {
+    width: 80%;
+    margin: auto
+}
+
 .containers {
     width: 80%;
     margin: auto
+}
+
+.liks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    justify-content: space-around;
+    color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -1035,5 +1049,13 @@ section#avatar {
         background: transparent;
         width: 100%;
         margin: 0 auto -8% auto;
+    }
+    .container {
+        transform: translateY(0)
+    }
+    .hero-style .slide-title,
+    .hero-style .slide-text,
+    .hero-style .slide-btns {
+        max-width: 100%
     }
 }
