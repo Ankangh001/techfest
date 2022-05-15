@@ -980,6 +980,7 @@ section#avatar {
     width: 100vw;
     justify-content: space-around;
     color: #fff;
+    z-index: 999;
 }
 
 @media (min-width: 992px) {
@@ -999,7 +1000,7 @@ section#avatar {
 
 @media screen and (min-device-width: 200px) and (max-device-width: 479px) {
     .hero-style .slide-title h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-left: 0;
     }
     .hero-style {
@@ -1019,8 +1020,8 @@ section#avatar {
     #countdown {
         align-items: center;
         width: 75%;
-        height: 80vh;
-        padding-bottom: 8%;
+        height: 90vh;
+        padding: 20px 5px;
         margin-bottom: 38%;
     }
     .ct-holder {
@@ -1054,7 +1055,7 @@ section#avatar {
         margin: 0 auto -8% auto;
     }
     .container {
-        transform: translateY(-10%)
+        transform: translateY(-15%)
     }
     .hero-style .slide-title,
     .hero-style .slide-text,
