@@ -72,8 +72,12 @@
     .manthanlogo {
         width: 100%;
         height: auto;
+    }
+    
+    img.manthanlogo2 {
+        width: 95%;
         position: relative;
-        bottom: 30%;
+        bottom: 47%;
     }
     
     .socials {
